@@ -1,0 +1,28 @@
+<li class="card" id="{{id}}">
+    <div class="card__content">
+        <img src="{{image}}" class="card__image">
+        <h2 class="card__name">{{name}}</h2>
+        <div class="card__descr">
+            <p class="card__price">
+                <i class="material-icons">monetization_on</i>
+                {{price}} кредитов
+            </p>
+            
+        </div>
+
+        <div class="card__reviews">{{description}}</div>
+        <ul class="tag-list">
+                {{#each ingredients}}
+                <li class="tag-list__item">{{this}}</li>
+                {{/each}}
+        </ul>
+
+        <button class="button card__button">
+            <i class="material-icons button__icon">
+                shopping_cart
+            </i>
+            В корзину
+        </button>
+
+    </div>
+</li>
